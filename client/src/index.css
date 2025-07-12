@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;600&family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(0, 0%, 0%);
+  --muted: hsl(0, 0%, 96%);
+  --muted-foreground: hsl(0, 0%, 40%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(0, 0%, 0%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(0, 0%, 0%);
+  --border: hsl(0, 0%, 0%);
+  --input: hsl(0, 0%, 90%);
+  --primary: hsl(0, 0%, 0%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(0, 0%, 96%);
+  --secondary-foreground: hsl(0, 0%, 10%);
+  --accent: hsl(0, 0%, 96%);
+  --accent-foreground: hsl(0, 0%, 10%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(0, 0%, 0%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .font-spectral {
+    font-family: 'Spectral', serif;
+  }
+
+  .font-dmsans {
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Spectral', serif;
+  }
+
+  /* Blog content styles */
+  .blog-content {
+    @apply prose prose-lg max-w-none;
+  }
+
+  .blog-content h1,
+  .blog-content h2,
+  .blog-content h3,
+  .blog-content h4,
+  .blog-content h5,
+  .blog-content h6 {
+    @apply text-black font-spectral;
+  }
+
+  .blog-content p {
+    @apply text-gray-800 leading-relaxed;
+  }
+
+  .blog-content a {
+    @apply text-black hover:underline;
+  }
+
+  .blog-content code {
+    @apply bg-gray-100 px-1 py-0.5 rounded text-sm;
+  }
+
+  .blog-content pre {
+    @apply bg-gray-100 p-4 rounded-lg overflow-x-auto;
+  }
+
+  .blog-content blockquote {
+    @apply border-l-4 border-gray-300 pl-4 italic;
+  }
+
+  .blog-content ul,
+  .blog-content ol {
+    @apply ml-6;
+  }
+
+  .blog-content li {
+    @apply mb-2;
+  }
+}
