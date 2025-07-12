@@ -46,36 +46,23 @@ export function BlogList({ blogPosts, isLoading, error }: BlogListProps) {
   }
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       {blogPosts.map((post) => (
         <article key={post.slug} className="blog-post">
-          <h2 className="text-2xl font-spectral font-normal mb-3">
+          <h2 className="text-lg font-spectral font-normal mb-2">
             <Link href={`/blog/${post.slug}`} className="hover:underline">
               {post.title}
             </Link>
           </h2>
-          <p className="text-gray-800 mb-2 leading-relaxed">
+          <p className="text-gray-600 mb-2 leading-relaxed text-sm">
             {post.description}
           </p>
-          <div className="flex items-center gap-4 text-sm text-gray-600">
-            <time dateTime={post.date.toString()}>
-              {new Date(post.date).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-              })}
-            </time>
-            <span className="text-gray-400">|</span>
-            <div className="flex gap-1">
-              {post.tags.map((tag, index) => (
-                <span key={tag}>
-                  {tag}
-                  {index < post.tags.length - 1 && (
-                    <span className="text-gray-400 ml-1">,</span>
-                  )}
-                </span>
-              ))}
-            </div>
+          <div className="text-xs text-gray-500">
+            {new Date(post.date).toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}
           </div>
         </article>
       ))}

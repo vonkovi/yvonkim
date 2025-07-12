@@ -1,12 +1,9 @@
 ---
 title: "The $10,000 Cofounder Trial"
-description: "The common advice that YC gives to founders is to find a cofounder that you have known personally for 2+ years."
 date: "2024-07-10"
 tags: ["startup"]
 slug: "10k-cofounder-trial"
 ---
-
-#### The Problem
 
 The common advice that YC gives to founders is to find a cofounder that you have known personally for 2+ years. YC also preaches that you should aim for someone that reminds of James Bond, a chariature of a relentlessly resourceful individual. And when you find this individual, perhaps it is best to go through a trial period to see if it's a match. These are exceptional advice for aspiring to enter the startup world. 
 
@@ -20,8 +17,6 @@ So what makes an effective trial period? Try out the 10K cofounder trial.
 
 --------------------------------------
 
-#### The 10K Cofounder Trial
-
 You have one week to make $10,000.
 
 The trial is quite elegant where the objective is stupid simple, yet require exceptional teamwork to pull off. It tests the team's ability to maintain frequent communication, tests the adapatibility of high-pressure situations, and forces everybody to get scrappy.
@@ -31,8 +26,6 @@ The trial is demanding and often results in failing cases. Personally, I have ha
 Finally, it is flexible enough that it doesn't shoehorn you. There are countless ways to earn $10K, and cofounders implicitly discover that if the original idea didn't work out, it is best to move onto a new idea as soon as possible. It hones the traits of startup founders aiming for hypergrowth startups. 
 
 --------------------------------------
-
-#### Conclusion
 
 While I have great willingness to share this advice, I have some warnings.
 
