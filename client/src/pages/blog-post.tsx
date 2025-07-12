@@ -7,7 +7,11 @@ import type { BlogPost } from "@shared/schema";
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
 
-  const { data: post, isLoading, error } = useQuery<BlogPost>({
+  const {
+    data: post,
+    isLoading,
+    error,
+  } = useQuery<BlogPost>({
     queryKey: ["/api/blog-posts", slug],
     queryFn: async () => {
       const response = await fetch(`/api/blog-posts/${slug}`);
@@ -60,13 +64,16 @@ export default function BlogPost() {
   return (
     <div className="bg-white text-black min-h-screen font-inter">
       <Navigation />
-      
+
       <main className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <Link href="/" className="text-xs text-gray-600 hover:text-black hover:underline mb-8 inline-block">
+          <Link
+            href="/"
+            className="text-xs text-gray-600 hover:text-black hover:underline mb-8 inline-block"
+          >
             ← Back
           </Link>
-          
+
           <article>
             <header className="mb-8">
               <h1 className="text-2xl font-spectral font-normal mb-3">
@@ -76,15 +83,15 @@ export default function BlogPost() {
                 {post.description}
               </p>
               <div className="text-xs text-gray-500 mb-6">
-                {new Date(post.date).toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric'
+                {new Date(post.date).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
                 })}
               </div>
             </header>
-            
-            <div 
+
+            <div
               className="blog-content text-sm leading-relaxed"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
