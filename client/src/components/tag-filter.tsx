@@ -14,6 +14,7 @@ export function TagFilter({ selectedTag, onTagChange }: TagFilterProps) {
   return (
     <div className="mb-6">
       <div className="flex flex-wrap gap-2 text-xs">
+        <span className="text-gray-600">Filter by:</span>
         {tags.map((tag, index) => (
           <div key={tag.value} className="flex items-center gap-2">
             <button
