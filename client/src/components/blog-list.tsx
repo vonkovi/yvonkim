@@ -1,8 +1,10 @@
 import { Link } from "wouter";
+// Assumes the BlogPost type now includes an optional 'tags' array
 import type { BlogPost } from "@shared/schema";
 
 interface BlogListProps {
-  blogPosts: BlogPost[];
+  // The BlogPost type should include an optional array of strings for tags
+  blogPosts: (BlogPost & { tags?: string[] })[];
   isLoading: boolean;
   error: Error | null;
 }
@@ -26,10 +28,6 @@ export function BlogList({ blogPosts, isLoading, error }: BlogListProps) {
   if (error) {
     return (
       <div className="text-center py-12">
-        <h2 className="text-xl font-spectral mb-4">Error Loading Blog Posts</h2>
-        <p className="text-gray-600">
-          There was an error loading the blog posts. Please try again later.
-        </p>
       </div>
     );
   }
@@ -37,10 +35,6 @@ export function BlogList({ blogPosts, isLoading, error }: BlogListProps) {
   if (blogPosts.length === 0) {
     return (
       <div className="text-center py-12">
-        <h2 className="text-xl font-spectral mb-4">No Blog Posts Found</h2>
-        <p className="text-gray-600">
-          No blog posts are available at the moment. Add some .md files to the blog folder to get started.
-        </p>
       </div>
     );
   }
@@ -49,20 +43,29 @@ export function BlogList({ blogPosts, isLoading, error }: BlogListProps) {
     <div className="space-y-6">
       {blogPosts.map((post) => (
         <article key={post.slug} className="blog-post">
-          <h2 className="text-lg font-spectral font-normal mb-2">
-            <Link href={`/blog/${post.slug}`} className="hover:underline">
+          <h2 className="text-lg font-spectral font-normal -mb-1">
+            <Link href={`/blog/${post.slug}`} className="hover:opacity-70  transition-opacity">
               {post.title}
             </Link>
           </h2>
           <p className="text-gray-600 mb-2 leading-relaxed text-sm">
             {post.description}
           </p>
-          <div className="text-xs text-gray-500">
-            {new Date(post.date).toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric'
+          <div className="text-xs text-gray-500 pb-6 border-b-[1px] border-gray-200">
+            {/* Date formatting remains the same */}
+            {new Date(post.date).toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
             })}
+            
+            {/* Conditionally render tags if they exist */}
+            {post.tags && post.tags.length > 0 && (
+              <>
+                <span className="mx-2">|</span>
+                <span>{post.tags.join(", ")}</span>
+              </>
+            )}
           </div>
         </article>
       ))}

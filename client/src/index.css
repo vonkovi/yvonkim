@@ -13,7 +13,7 @@
   --popover-foreground: hsl(0, 0%, 0%);
   --card: hsl(0, 0%, 100%);
   --card-foreground: hsl(0, 0%, 0%);
-  --border: hsl(0, 0%, 0%);
+  --border: hsl(0, 0%, 64%);
   --input: hsl(0, 0%, 90%);
   --primary: hsl(0, 0%, 0%);
   --primary-foreground: hsl(0, 0%, 100%);
@@ -74,7 +74,7 @@
   }
 
   .blog-content p {
-    @apply text-gray-800 leading-relaxed text-sm mb-4;
+    @apply text-gray-600 leading-relaxed text-sm mb-4;
   }
 
   .blog-content a {

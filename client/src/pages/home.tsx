@@ -36,8 +36,8 @@ export default function Home() {
         />
       </main>
 
-      <footer className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 mb-8">
-        <div className="border-t border-black pt-8">
+      <footer className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
+        <div className=" pt-8">
           <p className="text-xs text-gray-600">
             © 2024 Yvon Kim. All rights reserved.
           </p>

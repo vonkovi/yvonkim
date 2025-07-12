@@ -72,10 +72,10 @@ export default function BlogPost() {
               <h1 className="text-2xl font-spectral font-normal mb-3">
                 {post.title}
               </h1>
-              <p className="text-gray-600 text-sm mb-3 leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed">
                 {post.description}
               </p>
-              <div className="text-xs text-gray-500 mb-6">
+              <div className="text-xs text-gray-500">
                 {new Date(post.date).toLocaleDateString('en-US', {
                   year: 'numeric',
                   month: 'long',
@@ -85,7 +85,7 @@ export default function BlogPost() {
             </header>
             
             <div 
-              className="blog-content text-sm leading-relaxed"
+              className="blog-content divider text-sm leading-relaxed"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
           </article>
