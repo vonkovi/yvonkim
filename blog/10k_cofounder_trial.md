@@ -1,7 +1,7 @@
 ---
 title: "The $10,000 Cofounder Trial"
 date: "2023-7-10"
-tags: ["technology", "startup"]
+tags: ["startup"]
 slug: "10k-cofounder-trial"
 ---
 
