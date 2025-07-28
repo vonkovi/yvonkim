@@ -23,7 +23,7 @@ export default function Home() {
     <div className="bg-white text-black min-h-screen font-inter">
       <Navigation />
       
-      <main className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="max-w-2xl mr-auto ml-36 px-4 sm:px-6 lg:px-8">
         <TagFilter 
           selectedTag={selectedTag} 
           onTagChange={setSelectedTag}
@@ -36,7 +36,7 @@ export default function Home() {
         />
       </main>
 
-      <footer className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
+      <footer className="max-w-2xl mr-auto ml-36 px-4 sm:px-6 lg:px-8 mb-10">
         <div className=" pt-8">
           <p className="text-xs text-gray-600">
             © 2024 Yvon Kim. All rights reserved.

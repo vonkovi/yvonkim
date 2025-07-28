@@ -22,7 +22,7 @@ export default function BlogPost() {
     return (
       <div className="bg-white text-black min-h-screen font-inter">
         <Navigation />
-        <main className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <main className="max-w-2xl mr-auto ml-36 px-4 sm:px-6 lg:px-8">
           <div className="animate-pulse">
             <div className="h-6 bg-gray-200 rounded mb-3"></div>
             <div className="h-3 bg-gray-200 rounded mb-2"></div>
@@ -42,7 +42,7 @@ export default function BlogPost() {
     return (
       <div className="bg-white text-black min-h-screen font-inter">
         <Navigation />
-        <main className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <main className="max-w-2xl mr-auto ml-36 px-4 sm:px-6 lg:px-8">
           <div className="text-center py-12">
             <h1 className="text-xl font-spectral mb-4">Blog Post Not Found</h1>
             <p className="text-gray-600 text-sm mb-8">
@@ -61,7 +61,7 @@ export default function BlogPost() {
     <div className="bg-white text-black min-h-screen font-inter">
       <Navigation />
       
-      <main className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="max-w-2xl mr-auto ml-36 px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
           <Link href="/" className="text-xs text-gray-600 hover:text-black hover:underline mb-8 inline-block">
             ← Back
