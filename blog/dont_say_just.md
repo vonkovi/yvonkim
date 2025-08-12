@@ -1,6 +1,6 @@
 ---
 title: "Don't Say Just"
-date: "2025-7-10"
+date: "2025-6-10"
 tags: ["personal"]
 slug: "dont-say-just"
 ---
