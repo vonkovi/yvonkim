@@ -9,7 +9,7 @@ The next app store will provide tools to large language models (LLMs).
 
 While I was taking the shower, I couldn't help myself but draw parallels between the operating systems and LLMs. The first time Andrej Karpathy, a Slovak-Canadian computer scientist, presented this idea, I didn't fully grasp the depth of the explanation and just waved it off as another minor lesson. But after picking up LangGraph (a framework for building complex AI agents) and building complex agentic systems, I started to get a clearer picture. It stuck in my mind until eventually realizing how LLMs could get adopted 3-5 years from now. And I'm very excited to see how this plays out. 
 
-![figure shows an image of a smartphone and llm and how they contain a email client](zzz.iphone-llm.png)
+![an image drawing comparisons between the iphone and llm](https://res.cloudinary.com/homebistro/image/upload/v1755067808/zzz.iphone-llm_mvqie6.png)
 
 Hopefully this graphical representation is helpful and helps highlight similarities. When an iPhone user wants to check their email, perhaps it's best to first download an email client from the App Store. So now the iPhone has more features! Not only can it now call, but you can now check emails!
 
