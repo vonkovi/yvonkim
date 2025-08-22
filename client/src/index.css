@@ -99,6 +99,6 @@
   }
 
   .blog-content li {
-    @apply mb-1;
+    @apply text-gray-600 leading-relaxed text-sm mb-4;
   }
 }
