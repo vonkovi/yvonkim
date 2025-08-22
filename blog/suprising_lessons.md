@@ -1,5 +1,5 @@
 ---
-title: "surprising-lessons"
+title: "Surprising Lessons"
 date: "2025-8-1"
 tags: ["personal"]
 slug: "suprising-lessons"
